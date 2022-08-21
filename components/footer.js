@@ -4,8 +4,8 @@ export default function Footer() {
     return (
         <div className="footer">
             <div className="gitRepo">
-                <Link href="/">
-                    <a><span>git</span>reposity</a>
+                <Link href="https://github.com/alifidanci/to-do-app">
+                    <a target="_blank"><span>git</span>reposity</a>
                 </Link>
             </div>
             <div className="copyright">&copy; 2022 Ali Mustafa Fidancı</div>

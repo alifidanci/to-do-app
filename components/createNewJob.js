@@ -30,7 +30,7 @@ export default function CreateNewJob() {
             <div className="newJobForm">
 
                 <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} align="bottom">
-                    <Col flex="1 1 200px">
+                    <Col flex="1 1 50%">
                         <p className="inputLabel">Job Name</p>
                         <Input
                             className="newJobName"
@@ -40,7 +40,7 @@ export default function CreateNewJob() {
                             onChange={e => setNewJobName(e.target.value)}
                         />
                     </Col>
-                    <Col flex="1 1 200px">
+                    <Col flex="1 1 25%">
                         <p className="inputLabel">Job Priority</p>
                         <Select
                             placeholder="Priority"
@@ -53,7 +53,7 @@ export default function CreateNewJob() {
                             })}
                         </Select>
                     </Col>
-                    <Col flex="1 1 200px">
+                    <Col flex="1 1 25%">
                         <Button
                             type="primary"
                             className="createNewJob"
