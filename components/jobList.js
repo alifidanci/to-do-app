@@ -17,6 +17,7 @@ export default function JobList() {
             dataIndex: 'name',
             key: 'name',
             width: '60%',
+            sorter: (a, b) => a.name.localeCompare(b.name)
         },
         {
             title: 'Priority',
@@ -27,6 +28,8 @@ export default function JobList() {
                     {priority.label}
                 </Tag>
             ),
+            sorter: (a, b) => b.priority.id - a.priority.id,
+            defaultSortOrder: 'ascent'
         },
         {
             title: 'Action',
